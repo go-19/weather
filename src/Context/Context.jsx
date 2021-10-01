@@ -5,7 +5,7 @@ const WeatherContext = createContext();
 function Provider ({children}) {
 
   const [cityName, setCityName] = useState('Tashkent')
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
   const values = {cityName, setCityName, showMenu, setShowMenu}
 
