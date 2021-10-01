@@ -20,7 +20,7 @@ function Weather({ api }) {
     (async () => {
 
       try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${api}&q=${cityName}&aqi=no`)
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${api}&q=${cityName}&aqi=no`)
 
         if (response.status >= 200 && response.status <= 299) {
 
