@@ -170,3 +170,31 @@
     font-size: 4rem;
   }  
 }
+
+@media only screen and (max-width: 440px) {
+  .weather {
+    padding: 30px 20px;
+  }
+
+  .weather_info-number {
+    font-size: 70px;
+  }
+
+  .weather_info-symbol {
+    font-size: 60px;
+  }  
+}
+
+@media only screen and (max-width: 390px) {
+  .weather_info-number {
+    font-size: 60px;
+  }
+
+  .weather_info-symbol {
+    font-size: 40px;
+  }  
+
+  .weather_info-location {
+    font-size: 30px;
+  }
+}
