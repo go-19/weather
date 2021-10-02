@@ -27,6 +27,8 @@ function Cities() {
   const getCityName = evt => {
     setCityName(evt.target.textContent)
     setShowMenu(false)
+    searchTerm.current.value = null
+    setTyping(false)
   }
 
   return (
