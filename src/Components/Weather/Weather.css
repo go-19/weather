@@ -4,21 +4,18 @@
   color: #fff;
   position: relative;
   z-index: 100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../Img/SunBackground.jpg');
 }
 
 .weather_sun {
-  background-image: url('../../Img/SunBackground.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.weather_moon {
+/* .weather_moon {
   background-image: url('../../Img/night.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+} */
 
 .weather::after {
   content: "";
