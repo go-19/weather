@@ -4,6 +4,7 @@ import { WeatherContext } from '../../Context/Context'
 
 function Weather({ api }) {
 
+  const date = new Date()
   const { cityName, setShowMenu } = useContext(WeatherContext)
   const [data, setData] = useState({
     temp: null,
@@ -12,6 +13,7 @@ function Weather({ api }) {
     image: null,
     status: null
   })
+
 
   useEffect(() => {
 
@@ -43,7 +45,7 @@ function Weather({ api }) {
   }, [api, cityName])
 
   return (
-    <section className='weather'>
+    <section className={date.getHours() >= 6 && date.getHours() < 18 ? 'weather weather_sun' : 'weather weather_moon'}>
       <header className='weather_header'>
         <a className='weather_link' href="/https://www.weatherapi.com/">weatherapi.com</a>
         <button className='weather_menu' onClick={() => setShowMenu(true)}>
