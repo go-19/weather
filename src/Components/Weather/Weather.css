@@ -7,15 +7,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../../Img/sun.jpg');
 }
 
 .weather_sun {
+  background-image: url('../../Img/sun.jpg');
 }
 
-/* .weather_moon {
+.weather_moon {
   background-image: url('../../Img/night.jpg');
-} */
+}
 
 .weather::after {
   content: "";
